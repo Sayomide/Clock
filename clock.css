@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: rgba(255,150,50);
+}
+.container  {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+}
+.clock  {
+        background:black;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+}
+.clock span {
+  position: absolute;
+  color: white;
+  inset: 10px;
+  font-size: 20px;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+}
+.clock span b
+        {
+         display: inline-block;
+         transform: rotate(calc(-30deg * var(--i)));
+}
+.hour, .minutes, .seconds {
+  position: absolute;
+  left: 50%;
+  bottom:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hour {
+      width: 10px;
+      height: 50px;
+      background: whitesmoke;
+      transform-origin: bottom;
+      border-start-end-radius: 20px;
+      border-start-start-radius: 20px;
+      z-index: 10;
+}
+.minutes {
+      width: 7px;
+      height: 70px;
+      background: white;
+      transform-origin: bottom;
+      border-start-end-radius: 20px;
+      border-start-start-radius: 20px;
+      z-index: 5;
+}
+.seconds {
+      width: 4px;
+      height: 90px;
+      background: white;
+      transform-origin: bottom;
+      border-start-end-radius: 20px;
+      border-start-start-radius: 20px;
+      z-index: 1;
+}
+.center {
+        position: absolute;
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        z-index: 20;
+}
