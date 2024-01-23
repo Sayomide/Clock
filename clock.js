@@ -1,5 +1,5 @@
 // declaring the variables
-tet hh = document.querySelector('.hour');
+let hh = document.querySelector('.hour');
 let mh = document.querySelector('.minutes');
 let sh = document.querySelector('.seconds');
 
